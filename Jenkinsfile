@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage('Build') { 
             steps { 
-               bat 'mvn clean install -PautoInstallPackage'
+               bat 'mvn clean install -PautoInstallSinglePackage'
                echo 'This is a minimal pipeline.' 
             }
         }
